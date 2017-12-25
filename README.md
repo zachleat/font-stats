@@ -8,4 +8,10 @@ For example:
 * Generate a unicode-range that directly matches all the code points in a font file.
 * Find all of the available OpenType features (`font-feature-settings` values) in a font file.
 
+## Installation
 
+Available on npm as [`font-stats`](https://www.npmjs.com/package/font-stats):
+
+```
+npm install font-stats
+```
