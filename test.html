@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<style>
+			@font-face {
+				font-family: MyFont;
+				src: url(fonts/OpenSans-Regular.ttf);
+				/*src: url(fonts/LatoLatin-Regular.ttf);*/
+			}
+			body {
+				font-family: MyFont;
+			}
+
+			h1 {
+			}
+			h1 + h1 {
+				font-feature-settings: "salt";
+			}
+			p {
+				font-size: 150%;
+			}
+			.noliga {
+				font-variant-ligatures: no-common-ligatures;
+				font-feature-settings: 'liga' 0, 'clig' 0;
+			}
+			.lnum {
+			  font-variant-numeric: lining-nums;
+			  font-feature-settings: "lnum";
+			}
+			.onum {
+				font-variant-numeric: oldstyle-nums;
+			  font-feature-settings: "onum";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>HI I hive an interesting bunch of coconuts.</h1>
+		<h1>HI I hive an interesting bunch of coconuts.</h1>
+		<h2>Ligatures</h2>
+		<p>ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti (ligatures)</p>
+		<p class="noliga">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti (no ligatures)</p>
+		<p>0123456789</p>
+		<p class="lnum">0123456789</p>
+		<p class="onum">0123456789</p>
+	</body>
+</html>
