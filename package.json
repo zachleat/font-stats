@@ -1,6 +1,6 @@
 {
   "name": "font-stats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": " Takes a directory of fonts and generates a JSON file with detailed font statistics ",
   "main": "src/FontStats.js",
   "scripts": {
