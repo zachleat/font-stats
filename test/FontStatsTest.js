@@ -53,3 +53,11 @@ test("getLigatureCodePoints", t => {
   t.deepEqual( opensans.getLigatureCodePoints()[3], [102,108] );
   t.deepEqual( opensans.getLigatureCodePoints()[4], [102,105] );
 });
+
+test("getSubsetCharacterSets", t => {
+  let subsets = opensans.getSubsetCharacterSets();
+  console.log( opensans.stats, subsets['cyrillic-ext'].getSize() );
+  t.truthy(subsets);
+  t.truthy(subsets['cyrillic-ext'].getSize());
+  t.true(subsets['cyrillic-ext'].getSize() > 0)
+});
