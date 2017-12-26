@@ -1,4 +1,5 @@
 const FontStatsDir = require("./src/FontStatsDir");
+const log = require("better-log").setConfig({ depth: 10 });
 
 let stats = new FontStatsDir("fonts/");
-console.log( stats.fetchAll() );
+log( stats.fetchAll() );

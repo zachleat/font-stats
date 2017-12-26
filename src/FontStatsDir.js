@@ -1,5 +1,4 @@
 const globby = require("globby");
-const log = require("better-log").setConfig({ depth: 10 });
 const FontStats = require("./FontStats");
 
 class FontStatsDir {
