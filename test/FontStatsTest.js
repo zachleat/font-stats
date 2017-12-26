@@ -8,6 +8,7 @@ let eightbit = new FontStats("./fonts/8BitArtSansNeue.ttf");
 let lato = new FontStats("./fonts/LatoLatin-Regular.ttf");
 
 test(t => {
+  t.truthy(opensans.stats);
   t.truthy(opensans._getGlyphSet().length);
   t.truthy(opensans.getUnicodes().length);
   t.truthy(opensans.getUnicodeRange());

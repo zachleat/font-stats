@@ -15,3 +15,10 @@ Available on npm as [`font-stats`](https://www.npmjs.com/package/font-stats):
 ```
 npm install font-stats
 ```
+
+## Usage
+
+```
+let opensans = new FontStats("./fonts/OpenSans-Regular.ttf");
+console.log( opensans.stats );
+```
